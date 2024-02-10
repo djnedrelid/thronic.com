@@ -566,12 +566,12 @@ input, select, textarea {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
+			pointer-events: auto;
 		}
 
 		#header nav {
 			margin: 1.5em 0 0 0;
 			pointer-events: auto;
-			user-select: auto;
 		}
 
 			#header nav li {
