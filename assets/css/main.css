@@ -142,6 +142,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			box-shadow: 2px 2px 2px #000;
 		}
 
 		.icon > .label {
@@ -532,6 +533,15 @@ input, select, textarea {
 		}
 	}
 
+	#pboks1 {
+		background-color: #348cb2;
+		border-radius: 20px;
+		padding: 10px;
+		opacity: 0.8;
+		border: 1px solid #fff;
+		box-shadow: 3px 3px 3px #000;
+	}
+
 	#header {
 		-moz-animation: header 1s 2.25s forwards;
 		-webkit-animation: header 1s 2.25s forwards;
@@ -565,8 +575,9 @@ input, select, textarea {
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
 			pointer-events: auto;
+			text-shadow: 2px 2px 3px #000;
 		}
 
 		#header nav {
