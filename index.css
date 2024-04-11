@@ -1,0 +1,95 @@
+BODY {
+	font-family: sans-serif;
+	line-height: 1.3;
+}
+
+H1, H2, H3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+PRE {
+	margin: 5px 0px;
+}
+
+A { text-decoration: none; }
+A:HOVER { text-decoration: underline; }
+
+/* Felles bredde på header og main. */
+#header,
+#main {
+	width: 1080px;
+}
+
+#header {
+	border-bottom: 1px solid #ccc;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+	margin: 0px auto;
+}
+
+#main-menu-left {
+	float: left;
+	width: 310px;
+	background-color: #fff;
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+	font-size: 19px;
+	text-align: right;
+}
+
+#main-menu-left A {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#main-menu-left .menuheader {
+	font-weight: bold;
+	font-style: italic;
+	display: block;
+}
+
+#main-content {
+	background-color: #fff;
+	margin-left: 330px; /* main-menu-left bredde + padding + hva enn ekstra som ser greit ut. */
+	min-width: 600px;
+	text-align: center;
+}
+
+#main-content BLOCKQUOTE {
+	margin: 0px;
+	background-color: #EBF5FB;
+	border-left: 5px solid #ccc;
+	padding-left: 5px;
+	overflow-x: scroll;
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+
+#main-menu-left,
+#main-content {
+	margin-bottom: 50px; /* ned til footer */
+}
+
+#footer {
+	clear: both;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	padding: 50px;
+}
+
+.back-link {
+	text-decoration: none !important;
+}
+
+.footer-dj-links {
+	cursor: pointer;
+	text-decoration: none !important;
+}
