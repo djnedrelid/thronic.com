@@ -15,6 +15,10 @@ PRE {
 A { text-decoration: none; }
 A:HOVER { text-decoration: underline; }
 
+LI {
+	margin-bottom: 10px;
+}
+
 /* Felles bredde på header og main. */
 #header,
 #main {
