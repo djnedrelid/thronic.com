@@ -58,6 +58,7 @@ function NotatMeny(unntak) {
 		'<a href="/Notes/ajax_skjelett.html">AJAX Skjelett (N)</a>',
 		'<br>',
 		'<span class="menuheader">MISC</span>',
+		'<a href="/Notes/misc_plex_media_server_migration.html">Plex Media Server Migration</a>',
 		'<a href="/Notes/misc_the_hexadecimal_system.html">The Hexadecimal System</a>',
 		'<br>',
 		'<span class="menuheader">WINDOWS</span>',

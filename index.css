@@ -58,7 +58,7 @@ A:HOVER { text-decoration: underline; }
 
 #main-content {
 	background-color: #fff;
-	margin-left: 330px; /* main-menu-left bredde + padding + hva enn ekstra som ser greit ut. */
+	margin-left: 340px; /* main-menu-left bredde + padding + hva enn ekstra som ser greit ut. */
 	min-width: 600px;
 	text-align: center;
 }
