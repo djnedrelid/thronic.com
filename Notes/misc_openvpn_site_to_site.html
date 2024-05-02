@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../index.css" rel="stylesheet" type="text/css">
+<script src="../index.js" type="text/javascript"></script>
+<title>thronic.com - OpenVPN Site-to-Site</title>
+</head>
+<body>
+
+<div id="header"><script>header();</script></div>
+
+<div id="main">
+
+<div id="main-menu-left">
+	<script>
+		backlink();
+		NotatMeny('misc_openvpn_site_to_site.html');
+	</script>
+</div>
+
+<div id="main-content" style="text-align:left">
+<h1>OpenVPN Site-to-Site</h1><br>
+
+A simple guide to setting up simple OpenVPN site-to-site.<br>
+VPN offers a secure path into e.g. a jobsite network instead of exposing ports like e.g. RDP publicly.<br><br>
+
+<b>Routing:</b><br>
+Only traffic meant for the respective site will be routed. <br>
+- Remove push route directive to route all traffic from the client.<br>
+- If server is to act as a gateway, you also need ip forwarding:<br>
+&nbsp;&nbsp;echo 1 > /proc/sys/net/ipv4/ip_forward<br><br>
+
+<b>Security:</b><br>
+A simple 2048-bit static key, shared between parties, is used in this guide for simplicity. <br>
+This is secure; as long as the key is not compromised (or look into PKI-based authentication).<br><br>
+
+<b>Creating the static key to share between VPN server and client:</b><br>
+<blockquote><pre>openvpn --genkey --secret /some/path/vpn.key</pre></blockquote><br>
+
+<b>server.ovpn:</b><br>
+<blockquote><pre>port 8001
+proto udp
+keepalive 15 60
+dev tun
+ifconfig 10.8.0.1 10.8.0.2
+persist-tun
+persist-key
+cipher AES-256-CBC
+comp-lzo adaptive
+secret /some/path/vpn.key
+push "route LOCAL.IP 255.255.255.0"
+log-append /some/path/vpn.log
+verb 1</pre></blockquote><br>
+
+<b>client.ovpn:</b><br>
+<blockquote><pre>remote myvpn.server 8001
+proto udp
+keepalive 15 60
+dev tun
+client
+ifconfig 10.8.0.2 10.8.0.1
+persist-tun
+persist-key
+cipher AES-256-CBC
+comp-lzo adaptive
+secret /some/path/vpn.key
+log-append /some/path/vpn.log
+verb 1</pre></blockquote>
+
+</div>
+
+<div id="footer"><script>footer();</script></div>
+
+</div>
+</body>
+</html>

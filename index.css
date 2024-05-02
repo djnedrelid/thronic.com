@@ -75,6 +75,12 @@ LI {
 	overflow-x: scroll;
 	tab-size: 4;
 	-moz-tab-size: 4;
+	white-space: nowrap;
+}
+
+#main-content IMG {
+	max-width: 725px;
+	height: auto;
 }
 
 #main-menu-left,
@@ -87,6 +93,7 @@ LI {
 	border-top: 1px solid #ccc;
 	text-align: center;
 	padding: 50px;
+	color: #666;
 }
 
 .back-link {
