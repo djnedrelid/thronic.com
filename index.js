@@ -71,7 +71,6 @@ function NotatMeny(unntak) {
 		'<a href="/Notes/windows_securing_rdp.html">Securing RDP</a>',
 		'<br>',
 		'<span class="menuheader">Various Notes</span>',
-		'<a href="/Notes/misc_openvpn_site_to_site.html">OpenVPN Site-to-Site</a>',
 		'<a href="/Notes/misc_plex_media_server_migration.html">Plex Media Server Migration</a>',
 		'<a href="/Notes/electric_silicone_and_circuit_boards.html">Silicone and Circuit Boards</a>',
 		'<a href="/Notes/misc_ssh_tunneling.html">SSH Tunneling</a>',
