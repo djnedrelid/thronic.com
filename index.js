@@ -1,7 +1,7 @@
 function header() {
 	document.write(
 		'<a href="/"><img src="/gfx/thronic_header_2.png"></a><br>'+
-		'<em>Just another guy plagued by deep curiosity.</em>'
+		'<em>Just another guy, plagued by deep curiosity.</em>'
 	);
 }
 
