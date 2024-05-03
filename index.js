@@ -8,12 +8,12 @@ function header() {
 function footer() {
 	var d = new Date();
 	document.write(
-		'<span style="font-weight:bold; cursor:help;" title="&copy; 2007-'+ d.getFullYear() +' Dag J. V. Nedrelid">ժʝ</span>&nbsp;&nbsp;'+
+		'<span style="font-weight:bold; cursor:help;" title="Dag J. V. Nedrelid">ժʝ</span>&nbsp;&nbsp;'+
 		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="E-mail">&#128231;</span> '+
 		'<a href="https://github.com/djnedrelid" class="footer-dj-links" target="_blank" title="GitHub">&#128008;</a> '+
 		'<a href="https://youtube.com/@thr0nic" class="footer-dj-links" target="_blank" title="YouTube">&#128250;</a> '+
 		'<br><br>'+
-		'&copy;2007-'+ d.getFullYear() +'.<br>'+
+		'&copy;2007-'+ d.getFullYear() +'<br>'+
 		'DAG J NEDRELID SOFTWARE ENK.<br>Org.nr. 930295590 - Open for freelancing.'
 	);
 }
