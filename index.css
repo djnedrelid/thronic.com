@@ -19,55 +19,7 @@ LI {
 	margin-bottom: 10px;
 }
 
-/* Felles bredde på header og main. */
-#header,
-#main {
-	width: 1080px;
-}
-
-#header {
-	border-bottom: 1px solid #ccc;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	margin-bottom: 50px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#main {
-	margin: 0px auto;
-}
-
-#main-menu-left {
-	float: left;
-	width: 310px;
-	background-color: #fff;
-	border-right: 1px solid #ccc;
-	padding-right: 10px;
-	font-size: 19px;
-	text-align: right;
-}
-
-#main-menu-left A {
-	display: block;
-	margin-bottom: 5px;
-}
-
-#main-menu-left .menuheader {
-	font-weight: bold;
-	font-style: italic;
-	display: block;
-}
-
-#main-content {
-	background-color: #fff;
-	margin-left: 340px; /* main-menu-left bredde + padding + hva enn ekstra som ser greit ut. */
-	min-width: 600px;
-	text-align: center;
-}
-
-#main-content BLOCKQUOTE {
+BLOCKQUOTE {
 	margin: 0px;
 	background-color: #EBF5FB;
 	border-left: 5px solid #ccc;
@@ -78,22 +30,19 @@ LI {
 	white-space: nowrap;
 }
 
-#main-content IMG {
+IMG {
 	max-width: 725px;
 	height: auto;
 }
 
-#main-menu-left,
-#main-content {
-	margin-bottom: 50px; /* ned til footer */
-}
-
-#footer {
-	clear: both;
-	border-top: 1px solid #ccc;
+#card {
+	width: 600px;
 	text-align: center;
-	padding: 50px;
-	color: #666;
+	margin: 0px auto;
+	border: 2px solid #999;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px #999;
 }
 
 .back-link {
@@ -103,4 +52,11 @@ LI {
 .footer-dj-links {
 	cursor: pointer;
 	text-decoration: none !important;
+	font-size: 28px;
+}
+
+.footer-dj-links IMG {
+	width: 50px;
+	margin-right: 10px;
+	opacity: 0.8;
 }

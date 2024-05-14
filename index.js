@@ -1,24 +1,22 @@
 function header() {
 	document.write(
-		'<a href="/"><img src="/gfx/thronic_header_2.png"></a><br>'+
-		'<em>Just another guy, plagued by deep curiosity.</em>'
+		'<a href="/"><img src="/gfx/thronic_header_2.png"></a>'
 	);
 }
 
 function footer() {
 	var d = new Date();
 	document.write(
-		'<span style="font-weight:bold; cursor:help;" title="Dag J. V. Nedrelid">ժʝ</span>&nbsp;&nbsp;'+
-		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="E-mail">&#128231;</span> '+
-		'<a href="https://github.com/djnedrelid" class="footer-dj-links" target="_blank" title="GitHub">&#128008;</a> '+
-		'<a href="https://youtube.com/@thr0nic" class="footer-dj-links" target="_blank" title="YouTube">&#128250;</a> '+
+		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="E-mail"><img src="/gfx/mail.png"></span> '+
+		'<a href="https://github.com/djnedrelid" class="footer-dj-links" target="_blank" title="GitHub"><img src="/gfx/github.png"></a> '+
+		'<a href="https://youtube.com/@thr0nic" class="footer-dj-links" target="_blank" title="YouTube"><img src="/gfx/youtube.png"></a> '+
 		'<br><br>'+
-		'&copy;2007-'+ d.getFullYear() +'<br>'+
-		'DAG J NEDRELID SOFTWARE ENK.<br>Org.nr. 930295590 - Open for freelancing.'
+		'&copy;2007-'+ d.getFullYear() +' <span style="font-weight:bold; cursor:help;" title="Dag J. V. Nedrelid">ժʝ</span>'
 	);
 }
 
 function backlink() {
+	return;
 	document.write(
 		'<a href="/" class="back-link" title="Go back to the front page.">&#127968;</a>'
 	);
