@@ -34,7 +34,6 @@ BLOCKQUOTE {
 IMG {
 	max-width: 725px;
 	height: auto;
-	pointer-events: none;
 }
 
 #card {
