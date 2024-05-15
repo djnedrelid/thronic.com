@@ -7,10 +7,10 @@ function header() {
 function footer() {
 	var d = new Date();
 	document.write(
-		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="E-mail"><img src="/gfx/mail.png"></span> '+
 		'<a href="https://github.com/djnedrelid" class="footer-dj-links" target="_blank" title="GitHub"><img src="/gfx/github.png"></a> '+
 		'<a href="https://youtube.com/@thr0nic" class="footer-dj-links" target="_blank" title="YouTube"><img src="/gfx/youtube.png"></a> '+
 		'<a href="https://www.paypal.com/donate/?hosted_button_id=LDZPJ2ZXC9K8A" class="footer-dj-links" target="_blank" title="PayPal"><img src="/gfx/donate1.png"></a> '+
+		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="e-mail"><img src="/gfx/mail.png"></span> '+
 		'<br><br>'+
 		'&copy;2007-'+ d.getFullYear() +' <span style="font-weight:bold; cursor:help;" title="Dag J. V. Nedrelid">ժʝ</span>'
 	);
