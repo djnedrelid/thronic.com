@@ -29,6 +29,7 @@ BLOCKQUOTE {
 	tab-size: 4;
 	-moz-tab-size: 4;
 	white-space: nowrap;
+	user-select: text;
 }
 
 IMG {
