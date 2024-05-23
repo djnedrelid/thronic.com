@@ -10,6 +10,7 @@ function footer() {
 		'<a href="https://github.com/djnedrelid" class="footer-dj-links" target="_blank" title="GitHub"><img src="/gfx/github.png"></a> '+
 		'<a href="https://youtube.com/@thr0nic" class="footer-dj-links" target="_blank" title="YouTube"><img src="/gfx/youtube.png"></a> '+
 		'<a href="https://www.paypal.com/donate/?hosted_button_id=LDZPJ2ZXC9K8A" class="footer-dj-links" target="_blank" title="Donate"><img src="/gfx/donate1.png"></a> '+
+		'<a href="#" class="footer-dj-links" onmouseover="links_menu_show(true)" onmouseout="links_menu_show(false)" title="Quick Links"><img src="/gfx/links.png"></a> '+
 		'<span onclick="mailme()" class="footer-dj-links" cursor:pointer;" title="Mail"><img src="/gfx/mail.png"></span> '+
 		'<br><br>'+
 		'&copy;2007-'+ d.getFullYear() +' <span style="font-weight:bold; cursor:help;" title="Dag J. V. Nedrelid">ժʝ</span>'
@@ -22,4 +23,13 @@ function mailme() {
 	var e = '';
 	for (let a=0; a<m.length; a++){e += m[c[a]];}
 	window.open(e, '_blank');
+}
+
+function links_menu_show(show) {
+	var menudiv = document.getElementById('links_menu');
+	
+	if (show)
+		menudiv.style.display = 'block';
+	else
+		menudiv.style.display = 'none';
 }
