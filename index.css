@@ -59,6 +59,9 @@ IMG {
 	background-color: #fff;
 	opacity: 0.9;
 	text-align: left;
+	text-shadow: 3px 3px 4px #999;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
 }
 
 .back-link {
